@@ -58,6 +58,19 @@
     ex) 함수선언 전에 호출을 먼저하는 것
     - let 은 먼저 선언이 되어야 사용이 가능 하다 호이스팅 현상이 없음.
 
+### 9. 자료형
+
+    - 기본타입 (primitive values)
+        1. Boolean : true(참) / false(거짓)
+            - ex)console.log(isTrue, typeof isTrue) -> Boolean
+        2. Null : null type ->'object' 값이 없다
+        3. Undefined : 값이 할당되지 않았다.
+        4. Number : 숫자 (정수, 소수, NaN- Not of Number)
+        5. String : 문자 (문자+문자도 가능), template literals `&{name}이렇게` 사용가능
+        6. Symbol : ES6부터 시작 고유한 값을 만들어내고 싶을때 사용
+            - 같은 인자를 넣어도 비교해보면 다르다 (a===b) false
+    - 객체 (objects)
+
 ### 01. Hello Javascript!
 
 1. 개발자도구 -> Console탭 사용
