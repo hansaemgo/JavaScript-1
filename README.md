@@ -71,6 +71,17 @@
             - 같은 인자를 넣어도 비교해보면 다르다 (a===b) false
     - 객체 (objects)
 
+### 10. 조건문(Conditional Statements)
+
+    - 참으로 평가 (Truthy)
+        1. true, 37, Mark, {}, []
+        2.조건에 따라 실행되며 표현식이 참으로 평가될 때, 실행되는 블럭을 만들어서 사용
+        3. if (표현식) { 표현식이 참일때 실행되는 문장 }
+        4.블록에 코드가 한줄이면 중괄호 {}는 생략가능
+        ex) if(true) console.log('실행);
+    - 거짓으로 평가 (falsy)
+        1. false, 0, null, undefined, NaN
+
 ### 01. Hello Javascript!
 
 1. 개발자도구 -> Console탭 사용
