@@ -71,7 +71,7 @@
             - 같은 인자를 넣어도 비교해보면 다르다 (a===b) false
     - 객체 (objects)
 
-### 10. 조건문(Conditional Statements)
+### 10. 조건문-1 (Conditional Statements)
 
     - 참으로 평가 (Truthy)
         1. true, 37, Mark, {}, []
@@ -81,6 +81,66 @@
         ex) if(true) console.log('실행);
     - 거짓으로 평가 (falsy)
         1. false, 0, null, undefined, NaN
+    - if 에 해당하지 않을때
+        1. else {}
+        2. else if {}
+        3. 중첩 이용도 가능하다
+
+### 11. 조건문-2 (논리연산자)
+
+    1. ! NOT : true는 false로, false는 true로 변경
+    2. && AND : 양쪽값이 둘다 ture일때 true
+    3. || OR : 양쪽값 중 하나가 ture일 경우 true
+
+### 12. 조건문-3 (삼항연산자를 이용한 연산)
+
+    - 조건 ? 참일때 실행되는 표현식 : 거짓일때 실행되는 표현식
+    - 중괄호 {}를 사용할 수 없는 문법이기 때문에 하나의 표현식만 사용 가능
+
+### 13. 조건문-4 (switch문)
+
+    - switch () { default : 뒤에 문장은 참이어서 항상 실행}
+    - case 비교할값 : {실행문}
+    - 해당 블럭을 거치지 않고 나가고 싶을때, break;
+
+### 14. 반복문-1
+
+    - 불필요한 반복을 하지 않도록 한다 대표적으로 for
+    - 유한한 반복: for(초기화; 반복조건; 반복된후 실행코드) {반복되는코드블럭}
+    - for (;;){실행문 무한루프} braek;
+
+### 15. 반복문-2
+
+    - whlie(조건) {조건이 거짓이 될때까지 실행}
+    - do{조건먼저실행} whlie (조건); 무조건 한번은 실행된다.
+    - for of / for in
+
+### 16. 함수-A
+
+    - function 이름 () {실행내용} : 함수선언 (함수는 객체의 한 종류)
+    - 함수에 매개변수 function 이름(매개변수) ex) function hello(name);
+    - 함수를 실행하여 얻어지는 값 : 리턴
+    - function hello(name){ return `hello ${name}`}; hello('mark'); 호출시사용
+    - 익명함수를 만들고 특졍한 변수에 담아두기 : const hello = function() {}
+    - 선언적 함수 : 호이스팅시 문제없음
+    - 차이점 : 호이스팅되지만 변수안에 값이 할당되지 않는다 (var)
+
+### 17. 함수-B
+
+    - 생성자 함수로 만드는 방법 - new 키워드로 객체만들기
+    - new Function('매개변수문자열-인자1', '매개변수문자열-인자2', ...., 함수의 바디)
+    - ex) const sum = new Function ('a', 'b', 'return a+b')
+    - console.log(sum(1,2));
+
+### 18. 화살표함수 (arrow function)
+
+    - 변수에 할당 : const hello1 = (매개변수) => { 실행문 }
+    - 매개변수 하나일때 괄호 생략가능 :   function hello2 = name => {}
+    - 매개변수 두개이상 괄호 생략불가능 : function hello3 = (name, age) => {}
+    - 함수리턴 아래와 같음 : const hello4 = name => {return `hello4 ${name}`}
+    - 함수리턴 (리턴과 중괄호 생략) : const hello5 = name => `hello5 ${name}`
+
+### 19. new 함수
 
 ### 01. Hello Javascript!
 
