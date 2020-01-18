@@ -172,6 +172,38 @@
     - 객체는 프로퍼티를 가질 수 있는데 프로토타입이라는 프로퍼티는 용도가 약속되어있는 특수한 프로퍼티이다
     - 프로토타입에 저장된 속성들은 생성자를 통해서 객체가 만들어질때 그 객체에 연결된다.
 
+### 23. 객체(object) - D 표준내장객체
+
+    - ex) object , function , array
+
+### 24. 클래스(Class) - A
+
+    - 클래스 만드는 두가지 방식 (선언적방식, 클래스표현식 변수에 할당)
+    1. Class A{} / console.log(new A();
+    - 선언적 방식이지만 호이스팅 일어나지 않는다.
+    2. Const B = Class {}; / console.log(new B());
+    - 생성자 ( constructor) : 최초의 초기값 객체에 넣어주는 기능
+    - class C {constructor(){console.log('constructor')}}
+
+### 25. 클래스(Class) - B
+
+    - get, set, readonly
+    - static 변수, 함수 : 객체가 아니고 클래스의 변수와 함수
+    ex) class A { static age = 37 } / 접근 : A.age
+
+### 26. 클래스(Class) - C
+
+    - 멤버변수 프로퍼티 만들기/ constructor, this.name ...
+    - 클래스 필드에 직접 사용 ( 런타임 사용 )
+    ex) class B { name; age;}
+    - 멤버함수
+
+### 26. 클래스(Class) - D
+
+    - extends (상속)
+    - override 클래스 상속멤버 변수 및 함수 추가
+    - super : 클래스의 상속생성자 함수
+
 ### 01. Hello Javascript!
 
 1. 개발자도구 -> Console탭 사용
