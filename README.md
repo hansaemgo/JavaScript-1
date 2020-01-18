@@ -140,7 +140,13 @@
     - 함수리턴 아래와 같음 : const hello4 = name => {return `hello4 ${name}`}
     - 함수리턴 (리턴과 중괄호 생략) : const hello5 = name => `hello5 ${name}`
 
-### 19. new 함수
+### 19. new 함수(생성자함수)
+
+    - 생성자 함수를 이용하여 새로운 객체를 만들어 내는 방법
+    - this.name/ this.age (this로 객체를 생성할수 있다)
+    - 화살표 함수는 this를 만들지 못한다 (new X)
+    - 함수호출하면 함수를 만들어서 리턴  ex) base(5)
+    - 함수를 호출할 때, 함수를 인자로 사용 (콜백)
 
 ### 01. Hello Javascript!
 
