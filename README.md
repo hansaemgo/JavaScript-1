@@ -226,6 +226,19 @@
     - Promise (resolve, reject) 작업이 성공하는 경우(resolve) 후에 다른 작업 해야할 경우 .then(..) 실패하는 경우(reject)는 .catch를 통해 수행할 작업 설정
     - then 내부에 넣은 함수에서 또 Promise 리턴하면 연달아 사용 가능
 
+### 29. async/await
+
+    - promise 앞부분에 await를 넣어주어 해당 프로미스가 끝날때까지 기다렸다가 다음작업을 수행하도록 한다.
+    - async함수에서 에러 발생시킬때 throw사용
+    - async함수에서 에러 잡아낼때 try..../ catch문 사용
+
+### 30. Promise all, Promise race
+
+    - 작업을 동시에 시작하고 싶다면 Promise.all 사용 (배열로 만들어서)
+    - Promise.all 은 등록한 프로미스 중 하나라도 실패하면 모든게 실패
+    - Promise.race 여러개의 프로미스를 등록해서 그중 가장 빨리끝난것의 결과를 가져온다
+    - .race의 경우에는 가장먼저끝난 프로미스가 실패했을 경우에만 에러로 간주
+
 ### 01. Hello Javascript!
 
 1. 개발자도구 -> Console탭 사용
