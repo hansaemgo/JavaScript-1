@@ -224,6 +224,7 @@
     - 비동기작업을 조금더 편하게 처리할수 있도록 ES6에 도입된 기능
     - 비동기 작업이 많아질 경우 콜백함수 사용하면 코드가 길어지고 복잡해짐.
     - Promise (resolve, reject) 작업이 성공하는 경우(resolve) 후에 다른 작업 해야할 경우 .then(..) 실패하는 경우(reject)는 .catch를 통해 수행할 작업 설정
+    - then 내부에 넣은 함수에서 또 Promise 리턴하면 연달아 사용 가능
 
 ### 01. Hello Javascript!
 
