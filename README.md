@@ -219,6 +219,12 @@
         4. 작업예약 : 단순히 어떤 작업을 몇 초후에 스케줄링 해야 하는 상황에는 setTimeout 을 사용하여 비동기적으로 처리한다.
     - 비동기 작업을 다룰때에는 callback함수 외에도 promise, async/await라는 문법을 사용하여 처리한다
 
+### 28. Promise
+
+    - 비동기작업을 조금더 편하게 처리할수 있도록 ES6에 도입된 기능
+    - 비동기 작업이 많아질 경우 콜백함수 사용하면 코드가 길어지고 복잡해짐.
+    - Promise (resolve, reject) 작업이 성공하는 경우(resolve) 후에 다른 작업 해야할 경우 .then(..) 실패하는 경우(reject)는 .catch를 통해 수행할 작업 설정
+
 ### 01. Hello Javascript!
 
 1. 개발자도구 -> Console탭 사용
